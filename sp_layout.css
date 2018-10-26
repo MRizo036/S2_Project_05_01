@@ -14,10 +14,12 @@
 */
 
 /* Window and Body Styles */
+/* The html selector and contents state that the html document with will have a height of 100% of the page. */
 html {
     height: 100%;
 }
 
+/* The body selector states that all properties within will affect the body elements in the html. The max and min width properties state that the page will be displayed properly on screens within the size of 640px and 960px. Margin left and margin right auto center the body content within on the page. the min height property constrains th height of the body element on the page.*/
 body {
     width: 95%;
     max-width: 960px;
@@ -27,6 +29,7 @@ body {
     min-height: 100%;
 }
 
+/* The selctor below states that all header, ul, nav, li, and a elements within the html page will be affected by the properties within. The box-sizing border box property specifies the behavior of the width and height of the element. Border box states taht the width and height of the properties will include the content, padding and border of an element.  */
 header,
 ul,
 nav,
@@ -36,6 +39,7 @@ a {
 }
 
 /* Row Styles */
+/* The selector below states that all elements with a class of row will be affected by the properties. Clear both clears these elements from ll floating elements. content "gives these elements an empty value. Display table states that the elements will be displayed in the same way a table would be.*/
 .row::after {
     clear: both;
     content: "";
@@ -43,12 +47,14 @@ a {
 }
 
 /* Page Header Styles */
+/* the selector states that img elements nested within the header element within the body element will be affected. The float property states that the elements will be floated left.  */
 body>header>img {
     display: block;
     width: 70%;
     float: left;
 }
 
+/* The selector states that the nav nested within the header will be affected by the properties within the selector. The padding left and right state that the padding on the element will be 2% to the left and right. */
 header>nav {
     float: left;
     padding-left: 2%;
@@ -56,6 +62,7 @@ header>nav {
     width: 30%;
 }
 
+/* The selector states that the a element nested within the li nested within the ul nested within the nav nested within the header will be affected by the styles. listed. */
 header>nav>ul>li>a {
     display: block;
     width: 100%;
@@ -63,6 +70,7 @@ header>nav>ul>li>a {
 
 
 /* Horizontal Navigation List Styles */
+/* The selector below states that the li nested within the ul within the nav with a class of horizontal. */
 nav.horizontal ul>li {
     display: block;
     width: 12.5%;
@@ -72,6 +80,7 @@ nav.horizontal ul>li {
 
 
 /* Topics Styles */
+/* the selector below states that the li nested within the ul with an id of topics will be affected by the properties listed. The margin left and right properties below specify what the margins for the elements will be.  */
 ul#topics>li {
     display: block;
     width: 20%;
@@ -80,14 +89,17 @@ ul#topics>li {
     margin-right: 1.5%;
 }
 
+/* The slector states that the first li nested within the ul with an id of topics will be affected by the properties within */
 ul#topics>li:first-of-type {
     margin-left: 7.75%;
 }
 
+/* Similar to the selector above, this selector does the same with the only difference being that it is specifying the last li listed. */
 ul#topics>li:last-of-type {
     margin-right: 7.75%;
 }
 
+/* The selector says that the img element nested within the li element nested within the ul with an id of topics will be affected by the properties listed.  */
 ul#topics>li>img {
     display: block;
     width: 50%;
@@ -96,12 +108,14 @@ ul#topics>li>img {
 }
 
 /* HR Styles */
+/* The selector states that the hr element in the html will be affected by the property listed.  */
 hr {
     width: 50%;
 }
 
 /* Customer Comment Styles */
-ul.comments {
+/* The selctor states that the properties within will be applied to the ul element in th html with an id of comments. margin top and botton specify the amount of margin space that should be applied to the top and bottom of the element.*/
+ul#comments {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
@@ -109,7 +123,16 @@ ul.comments {
     margin-bottom: 40px;
 }
 
-ul.comments>li {
+/* Similar to above, the only difference being that the li nested within the ul with the id of comments is being affected. */
+ul#comments>li {
+    display: block;
+    width: 50%;
+    float: left;
+    margin-bottom: 30px;
+}
+
+/* Similar to above, the only difference being that the img nested within the li nested within the ul with an id of comments will be affected*/
+ul#comments>li>img {
     display: block;
     width: 20%;
     float: left;
@@ -117,4 +140,14 @@ ul.comments>li {
     margin-right: 5%;
 }
 
+/* the selector states that p elements nested within the li nested within the ul with an id of comments will be affected by the listed properties. */
+ul#comments>li>p {
+    float: left;
+    width: 70%;
+}
+
 /* Footer Styles */
+/* The selector states that the footer elements within the html will be affected by the properties listed within */
+footer {
+    clear: both;
+}
